@@ -117,8 +117,6 @@ for ( i in names)
 # Calculate Mean
 
 
-extractedData$col_names <- namesList
-
 
 library(reshape2)
 testMelt<- melt(extractedData,id=c("Subject_id","Activity_label"),measure.vars=namesList)
